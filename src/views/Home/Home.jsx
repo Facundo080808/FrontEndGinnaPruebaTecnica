@@ -12,23 +12,22 @@ function Home() {
     const Tasks = useSelector(state=>state.tasks.tasksList);
     const [tasks , setTasks] = useState(Array.isArray(Tasks) && Tasks);
     const [currentPage , setCurrentPage] = useState(0);
+    const reestart = ()=>{
+        setCurrentPage(0);
+        setTasks(Array.isArray(Tasks) &&[...Tasks].splice(0, itemsPorPage))
+    }
     useEffect(()=>{
         reestart()
         dispatch(getAllTasksAction());
-        console.log(Tasks);
         
     },[dispatch])
     useEffect(() => {
         if (Array.isArray(Tasks) && Tasks.length > 0) {
             setTasks([...Tasks].splice(0, itemsPorPage));
         }
-    }, [Tasks,reestart]);
+    }, [Tasks]);
     
     
-    const reestart = ()=>{
-        setCurrentPage(0);
-        setTasks(Array.isArray(Tasks) &&[...Tasks].splice(0, itemsPorPage))
-    }
     const nextHandler = ()=>{
         const total = Array.isArray(Tasks) && Tasks.length;
         const nextPage = currentPage + 1;
