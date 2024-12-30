@@ -17,10 +17,11 @@ function Home() {
         setTasks(Array.isArray(Tasks) &&[...Tasks].splice(0, itemsPorPage))
     }
     useEffect(()=>{
-        reestart()
+        setCurrentPage(0);
+        setTasks(Array.isArray(Tasks) &&[...Tasks].splice(0, itemsPorPage))
         dispatch(getAllTasksAction());
-        
-    },[dispatch,reestart])
+    
+    },[dispatch])
     useEffect(() => {
         if (Array.isArray(Tasks) && Tasks.length > 0) {
             setTasks([...Tasks].splice(0, itemsPorPage));
