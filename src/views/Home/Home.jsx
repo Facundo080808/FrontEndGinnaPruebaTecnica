@@ -20,7 +20,7 @@ function Home() {
         reestart()
         dispatch(getAllTasksAction());
         
-    },[dispatch])
+    },[dispatch,reestart])
     useEffect(() => {
         if (Array.isArray(Tasks) && Tasks.length > 0) {
             setTasks([...Tasks].splice(0, itemsPorPage));
