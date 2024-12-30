@@ -9,7 +9,7 @@ export function Update() {
     const { id } = useParams();
     useEffect(()=>{
         dispatch(getByIdTask(id))
-    },[])
+    },[dispatch, id])
     const TaskObject = useSelector(state=>state.tasks.tasksList);
     useEffect(() => {
         if (TaskObject) {

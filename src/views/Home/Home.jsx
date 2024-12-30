@@ -22,7 +22,7 @@ function Home() {
         if (Array.isArray(Tasks) && Tasks.length > 0) {
             setTasks([...Tasks].splice(0, itemsPorPage));
         }
-    }, [Tasks]);
+    }, [Tasks,reestart]);
     
     
     const reestart = ()=>{

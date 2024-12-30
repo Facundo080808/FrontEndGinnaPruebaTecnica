@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { useDispatch } from 'react-redux';
 import { updateAction } from '../../redux/action';
-import { useState } from 'react';
 
 function Cards(props) {
     const dispatch = useDispatch()
