@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { postAction } from "../../redux/action";
 import { useDispatch } from 'react-redux';
 import { Nav } from "../../components/nav/nav";

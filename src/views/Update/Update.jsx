@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { deleteAction, getByIdTask, postAction, updateAction } from "../../redux/action";
+import { deleteAction, getByIdTask, updateAction } from "../../redux/action";
 import { useDispatch, useSelector } from 'react-redux';
 import { Nav } from "../../components/nav/nav";
 import { useParams } from "react-router-dom";

@@ -1,13 +1,12 @@
 import {  UpdateIcon } from '../icons/deleteIcon';
 import { Link } from "react-router-dom";
-import { PendingIcon } from '../icons/pendingBtn';
+
 import { useDispatch } from 'react-redux';
 import { updateAction } from '../../redux/action';
 import { useState } from 'react';
 
 function Cards(props) {
     const dispatch = useDispatch()
-    const [State, setState] = useState(props.task.state) 
     const changueState = ()=>{
         
         dispatch(updateAction(props.task._id,{

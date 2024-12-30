@@ -1,4 +1,4 @@
-import {useDispatch,useSelector,useStore} from 'react-redux';
+import {useDispatch,useSelector} from 'react-redux';
 import {useState,useEffect} from 'react';
 import { getAllTasksAction } from '../../redux/action';
 import Cards from '../../components/Cards/Cards';

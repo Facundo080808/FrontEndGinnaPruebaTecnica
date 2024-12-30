@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { getAllTasksAction, getCompletedTasksAction, getPendingTasksAction } from "../../redux/action";
 
 export function Filters({reestart}) {
