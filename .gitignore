@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+
+
+
+
+
+
+
+# TypeScript build output
+*.tsbuildinfo
