@@ -5,7 +5,7 @@ import Cards from '../../components/Cards/Cards';
 import styles from "./Home.module.css";
 import { Filters } from '../../components/filters/filters';
 import { Nav } from '../../components/nav/nav';
-
+//hu
 function Home() {
     const itemsPorPage = 8;
     const dispatch = useDispatch();
